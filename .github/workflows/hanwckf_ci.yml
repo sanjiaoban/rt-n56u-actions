@@ -4,16 +4,16 @@
 name: hanwckf_ci
 
 on: 
-#  release:
-#    types: [published]
-#  push:                                                        # 推送操作
-#    tags:
-#      - 'v*'
+  release:
+    types: [published]
+  push:                                                        # 推送操作
+    tags:
+      - 'v*'
 #    branches:                                                  # 分支
 #      - main                                                   # 主分支
-  workflow_dispatch:
-  schedule:                                                    # 自动编译时间表
-    - cron: 0 12 1 * *                                         # 每天国际时间19点，北京时间凌晨3点执行(北京+8)
+#  workflow_dispatch:
+#  schedule:                                                    # 自动编译时间表
+#    - cron: 0 12 1 * *                                         # 每天国际时间19点，北京时间凌晨3点执行(北京+8)
   watch:                                                        # 监视操作
     types: [started]                                            # 点击 Star 之后
 env:
