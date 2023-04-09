@@ -102,7 +102,7 @@ jobs:
           git clone --depth=1 $src_git $build_dir
       - name: Prepare toolchain
         run: |                         # 下载预编译的构建工具链
-          cd toolchain-mipsel
+          cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           mkdir -p /opt/images/
       - name: Modify configs
